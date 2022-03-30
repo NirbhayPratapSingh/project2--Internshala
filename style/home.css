@@ -1,0 +1,46 @@
+* {
+    font-family: system-ui;
+    color: #333;
+
+}
+
+#iqbal {
+    margin: auto;
+    width: 90vw;
+}
+
+#iqbal>p {
+    font-size: 1.2rem;
+}
+
+#iqbal>p>a {
+    float: right;
+    color: #008BDC;
+    font-weight: 600;
+}
+
+#iqbal>h1>img {
+    width: 70px;
+}
+.citycat{
+    margin-bottom:100px;
+}
+
+.citycat>div {
+    display: flex;
+
+
+}
+
+.iq {
+    border-radius: 10px;
+}
+
+.iq>p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.iq>img {
+    width: 155px;
+}
