@@ -1,3 +1,51 @@
-.ContainerR{
-    border: 2px solid black;
+body{
+    background-color: rgb(251, 251, 252);
+}
+
+.countR{
+    margin-left: 55%;
+}
+#content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.filtersetR{
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align:left;
+    height: 500px;
+    width: 300px;
+    border-style: groove;
+
+}
+.FilterstartR{
+   
+    margin: 0px;
+}
+.containerR{
+    background-color: white;
+    border-radius: 10px;
+    border-style: groove;
+    width: 700px;
+    height: 350px;
+    margin-bottom: 15px;
+}
+.boxheadR{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.boxbottomR{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+p{
+    font-size: 20px;
 }
