@@ -143,6 +143,33 @@
             /* border: solid 1px black; */
             margin-top: 15px;
         }
+        #box7
+        {
+            text-align: center;
+        }
+        #box7info1
+        {
+            display: flex;
+            text-align: center;
+            margin: auto;  
+            width:50%; 
+        }
+        #box7info1>div
+        {
+            display: flex;
+            margin:20px;
+        }
+        #box7info1>div>img
+        {
+            height: 40px;
+            width: 40px;
+            margin-top: -5px;
+        }
+        .btn btn-primary
+        {
+            width: 1000px;
+        }
+
         #box8
         {
             text-align: center;
@@ -379,7 +406,7 @@
     </div>
     <div id="box7">
         <h3>Training syllabus</h3>
-        <div>
+        <div id="box7info1">
             <div>
                 <img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-s/videos.png">
                 <h5>92 video tutorials</h5>
@@ -392,9 +419,46 @@
                 <img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-s/projects.png">
                 <h5>1 project</h5>
             </div>
+        </div >
+        <div id="box7info2">
             <h5>After completing the training, you can also download videos for future reference</h5>
             <div>
-                
+                <div>
+                    <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                          <h5>HTML</h5>
+                          <p>6 Topics</p>
+                        </button>
+                      </p>
+                      <div style="min-height:0px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                          <div class="card card-body" style="width: 300px;">
+                            <ul>
+                                <li>About the Training</li>
+                                <li>Basic Concepts of Web Development</li>
+                                <li>Setting Up Local Environment</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div>
+                    <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                          Toggle width collapse
+                        </button>
+                      </p>
+                      <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                          <div class="card card-body" style="width: 300px;">
+                            This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
     </div>
