@@ -1,44 +1,65 @@
 body{
-    background-color: rgb(251, 251, 252);
+    background-color: rgb(241, 241, 247);
 }
-
+input{
+    width: 200px;
+    height: 30px;
+}
 .countR{
     margin-left: 55%;
 }
 #content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 20%;
-    margin-right: 20%;
+    justify-content: space-around;
 }
-.filtersetR{
-    margin-right: 20px;
+#FilterR{
+    margin-top: 2%;
+    padding-left: 2%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 6px;
     text-align:left;
-    height: 500px;
-    width: 300px;
-    border-style: groove;
+    height: 450px;
+    width: 250px;
+    position:fixed;
+    margin-right: 40%;
 
 }
 .FilterstartR{
    
     margin: 0px;
 }
+.KeywordR{
+    background-color: white;
+    /* position: fixed; */
+    border-style: groove;
+    /* padding: 2%; */
+
+}
 .containerR{
     background-color: white;
-    border-radius: 10px;
-    border-style: groove;
-    width: 700px;
-    height: 350px;
+    border-radius: 6px;
+    width: 600px;
+    height: 250px;
     margin-bottom: 15px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    margin-left: 30%;
+    
+}
+h3{
+    font-style: italic;
 }
 .boxheadR{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
+}
+img{
+    width: 100px;
+    height: 60px;
 }
 .boxbottomR{
     display: flex;
@@ -47,5 +68,5 @@ body{
 
 }
 p{
-    font-size: 20px;
+    font-size: 15px;
 }
