@@ -8,11 +8,63 @@
     <title>Internshala_Home</title>
     <link rel="stylesheet" href="./style/home.css">
     <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/search.css">
     
 </head>
-
 <body>
     <div id="body_1"></div>
+    <div id="search_home" onclick="showSearch()">
+        <input type="text" placeholder="What are you looking for?" readonly>
+        <div onclick="showSearch()">
+            <img data-v-8d30b0e0="" onclick="showSearch()"
+                src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzEgMTcxIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzEuOTkyMTl2LTE3MS45OTIxOWgxNzEuOTkyMTl2MTcxLjk5MjE5eiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik03MS44MiwxMC4yNmMtMzIuMTQyNjUsMCAtNTguMTQsMjUuOTk3MzUgLTU4LjE0LDU4LjE0YzAsMzIuMTQyNjYgMjUuOTk3MzUsNTguMTQgNTguMTQsNTguMTRjMTEuNDc1NywwIDIyLjA5NjQxLC0zLjM2NjU2IDMxLjEwMDYzLC05LjA4NDM3bDQyLjAwMTg3LDQyLjAwMTg4bDE0LjUzNSwtMTQuNTM1bC00MS40Njc1LC00MS4zNjA2MmM3LjQ1NDUzLC05Ljc3OTA2IDExLjk3LC0yMS44OTYwMiAxMS45NywtMzUuMTYxODdjMCwtMzIuMTQyNjUgLTI1Ljk5NzM0LC01OC4xNCAtNTguMTQsLTU4LjE0ek03MS44MiwyMy45NGMyNC42MjEzMywwIDQ0LjQ2LDE5LjgzODY3IDQ0LjQ2LDQ0LjQ2YzAsMjQuNjIxMzMgLTE5LjgzODY3LDQ0LjQ2IC00NC40Niw0NC40NmMtMjQuNjIxMzMsMCAtNDQuNDYsLTE5LjgzODY3IC00NC40NiwtNDQuNDZjMCwtMjQuNjIxMzMgMTkuODM4NjcsLTQ0LjQ2IDQ0LjQ2LC00NC40NnoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="
+                alt="icon" customsize="170" width="30" height="30" style="fill: rgb(0, 0, 0);">
+        </div>
+    </div>
+    <div id="search_main">
+        <div>
+            <div>
+                <div id="search_firstdiv">
+                    <strong>I am looking for</strong>
+                    <div onclick="showOptionsearch()">
+                        <span>Internship</span>
+                        <div></div>
+                    </div>
+                    <div id="search_option">
+                        <p>Internship</p>
+                        <p>Online Training</p>
+                        <p>Job</p>
+                    </div>
+                     <strong>in</strong>
+                </div>
+                <img onclick="showSearch()" height="30px" srcset="https://img.icons8.com/material/344/multiply--v1.png 2x" alt="icon"
+                    loading="lazy">
+            </div>
+            <div>
+                <input type="text" placeholder="e.g. Design, Mumbai, Infosys" onkeypress="call(event)">
+                <div id="search_icon" onclick="call(true)">
+                    <img data-v-8d30b0e0=""
+                        src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzEgMTcxIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzEuOTkyMTl2LTE3MS45OTIxOWgxNzEuOTkyMTl2MTcxLjk5MjE5eiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik03MS44MiwxMC4yNmMtMzIuMTQyNjUsMCAtNTguMTQsMjUuOTk3MzUgLTU4LjE0LDU4LjE0YzAsMzIuMTQyNjYgMjUuOTk3MzUsNTguMTQgNTguMTQsNTguMTRjMTEuNDc1NywwIDIyLjA5NjQxLC0zLjM2NjU2IDMxLjEwMDYzLC05LjA4NDM3bDQyLjAwMTg3LDQyLjAwMTg4bDE0LjUzNSwtMTQuNTM1bC00MS40Njc1LC00MS4zNjA2MmM3LjQ1NDUzLC05Ljc3OTA2IDExLjk3LC0yMS44OTYwMiAxMS45NywtMzUuMTYxODdjMCwtMzIuMTQyNjUgLTI1Ljk5NzM0LC01OC4xNCAtNTguMTQsLTU4LjE0ek03MS44MiwyMy45NGMyNC42MjEzMywwIDQ0LjQ2LDE5LjgzODY3IDQ0LjQ2LDQ0LjQ2YzAsMjQuNjIxMzMgLTE5LjgzODY3LDQ0LjQ2IC00NC40Niw0NC40NmMtMjQuNjIxMzMsMCAtNDQuNDYsLTE5LjgzODY3IC00NC40NiwtNDQuNDZjMCwtMjQuNjIxMzMgMTkuODM4NjcsLTQ0LjQ2IDQ0LjQ2LC00NC40NnoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="
+                        alt="icon" customsize="170" width="30" height="30" style="fill: rgb(0, 0, 0);">
+                </div>
+            </div>
+            <p>POPULAR CITIES</p>
+            <a href="">Work from home</a>
+            <a href="">Delhi/NCR</a>
+            <a href="">Bangalore</a>
+            <a href="">Mumbai</a>
+            <a href="">Chennai</a>
+            <a href="">Kolkata</a>
+            <p>POPULAR CATEGORIES</p>
+            <a href="">Work from home</a>
+            <a href="">Delhi/NCR</a>
+            <a href="">Bangalore</a>
+            <a href="">Mumbai</a>
+            <a href="">Chennai</a>
+            <a href="">Kolkata</a>
+        </div>
+    </div>
+   
     <div id="iqbal">
         <h1>Internship</h1>
         <p>Applu to 10,000+ internships for free
@@ -236,6 +288,7 @@
 
 </html>
 <script src="./script/navfunc.js"></script>
+<script src="./script/search.js"></script>
 <script src="./script/home.js"></script>
 <script type="module">
     import navbar from "./script/nav.js"
