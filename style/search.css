@@ -1,8 +1,9 @@
 #search_home {
     /* border: 1px solid gray; */
+    /* margin-top: 40px; */
     display: flex;
     width: 45vw;
-    margin: auto;
+    margin: 30px auto;
     /* border-radius: 5px; */
     justify-content: center;
     align-items: center;
