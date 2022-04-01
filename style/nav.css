@@ -1,4 +1,4 @@
-body {
+#body_1 {
     margin: 0px;
     /* background-color: aqua; */
     font-family: system-ui;
@@ -43,7 +43,7 @@ body {
 #nav_log>a,
 #nav_raj>div>a {
     font-weight: 600;
-    color: gray;
+    color: #484848;
     font-family: system-ui;
     text-decoration-line: none;
 }
