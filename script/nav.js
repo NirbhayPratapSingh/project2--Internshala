@@ -66,95 +66,77 @@ const navbar = ()=>{
     </div>
     <div class="navOptiondiv">
         <div>
-            <p>Location</p>
-            <p>Profile</p>
-            <p>Category</p>
+            <p>Most Popular</p>
+            <p>Programming</p>
+            <p>Business & Management</p>
+            <p>Core Engineering</p>
+            <p>Data Science</p>
+            <p>Design</p>
+            <p>Creative Arts</p>
+            <p>Language</p>
+            <p>Career Development</p>
             <p>Specializations</p>
         </div>
         <div>
-            <a href="">Work from Home</a>
-            <a href="">Internship in India</a>
-            <a href="">Internship in Delhi</a>
-            <a href="">Internship in Bangalore</a>
-            <a href="">Internship in Hyderabad</a>
-            <a href="">Internship in Mumbai</a>
-            <a href="">Internship in Chennai</a>
-            <a href="">Internship in Gurgaon</a>
-            <a href="">Internship in Kolkata</a>
+            <a href="">Digital Marketing</a>
+            <a href="">Programming with Python</a>
+            <a href="">AutoCAD</a>
+            <a href="">Advanced Excel</a>
+            <a href="">Machine Learning</a>
+            <a href="">Android App Development</a>
+            <a href="">Data Science</a>
+            <a href="">Programming with C and C++</a>
+            <a href="">Financial Modelling and Valuation</a>
             <a href="">Virtual internship</a>
             <a href="">Work from Home</a>
             <a href="">Internship in India</a>
-            <a href="">Internship in Delhi</a>
-            <a href="">Internship in Bangalore</a>
-            <a href="">Internship in Hyderabad</a>
-            <a href="">Internship in Mumbai</a>
-            <a href="">Internship in Chennai</a>
-            <a href="">Internship in Gurgaon</a>
-            <a href="">Internship in Kolkata</a>
-            <a href="">Virtual internship</a>
-    
+            <a href="">Fusion 360</a>
+            <a href="">Internet of Things</a>
+            <a href="">Ansys</a>
+            <a href="">3D Printing</a>
+            <a href="">LabVIEW</a>
+            <a href="">Arduino</a>
+            <a href="">CATIA</a>
+            <a href="">MATLAB</a>
+            <a href="">Engineering drawing</a>
+            <a href="">VLSI Design</a>
+            <a href="">Siemens NX</a>
         </div>
     </div>
     <div class="navOptiondiv">
         <div>
             <p>Location</p>
-            <p>Profile</p>
             <p>Category</p>
-            <p>Specializations</p>
         </div>
         <div>
-            <a href="">Work from Home</a>
-            <a href="">Internship in India</a>
-            <a href="">Internship in Delhi</a>
-            <a href="">Internship in Bangalore</a>
-            <a href="">Internship in Hyderabad</a>
-            <a href="">Internship in Mumbai</a>
-            <a href="">Internship in Chennai</a>
-            <a href="">Internship in Gurgaon</a>
-            <a href="">Internship in Kolkata</a>
+            <a href="">Remote</a>
+            <a href="">Jobs in Delhi</a>
+            <a href="">Jobs in Mumbai</a>
+            <a href="">Jobs in Bangalore</a>
+            <a href="">Jobs in Hyderabad</a>
+            <a href="">Jobs in Mumbai</a>
+            <a href="">Jobs in Chennai</a>
+            <a href="">Jobs in Gurgaon</a>
+            <a href="">Jobs in Kolkata</a>
             <a href="">Virtual internship</a>
-            <a href="">Work from Home</a>
-            <a href="">Internship in India</a>
-            <a href="">Internship in Delhi</a>
-            <a href="">Internship in Bangalore</a>
-            <a href="">Internship in Hyderabad</a>
-            <a href="">Internship in Mumbai</a>
-            <a href="">Internship in Chennai</a>
-            <a href="">Internship in Gurgaon</a>
-            <a href="">Internship in Kolkata</a>
+            <a href="">View all jobs</a>
+            <a href="">Jobs in India</a>
+            <a href="">Jobs in Delhi</a>
+            <a href="">Jobs in Bangalore</a>
+            <a href="">Jobs in Hyderabad</a>
+            <a href="">Jobs in Mumbai</a>
+            <a href="">Jobs in Chennai</a>
+            <a href="">Jobs in Gurgaon</a>
+            <a href="">Jobs in Kolkata</a>
             <a href="">Virtual internship</a>
-    
         </div>
     </div>
-    <div class="navOptiondiv">
-        <div>
-            <p>Location</p>
-            <p>Profile</p>
-            <p>Category</p>
-            <p>Specializations</p>
+    <div class="navOptiondiv" style="height:fit-content">
+        <div style="box-shadow:none">
         </div>
-        <div>
-            <a href="">Work from Home</a>
-            <a href="">Internship in India</a>
-            <a href="">Internship in Delhi</a>
-            <a href="">Internship in Bangalore</a>
-            <a href="">Internship in Hyderabad</a>
-            <a href="">Internship in Mumbai</a>
-            <a href="">Internship in Chennai</a>
-            <a href="">Internship in Gurgaon</a>
-            <a href="">Internship in Kolkata</a>
-            <a href="">Virtual internship</a>
-            <a href="">Work from Home</a>
-            <a href="">Internship in India</a>
-            <a href="">Internship in Delhi</a>
-            <a href="">Internship in Bangalore</a>
-            <a href="">Internship in Hyderabad</a>
-            <a href="">Internship in Mumbai</a>
-            <a href="">Internship in Chennai</a>
-            <a href="">Internship in Gurgaon</a>
-            <a href="">Internship in Kolkata</a>
-            <a href="">Virtual internship</a>
-    
+        <div style="box-shadow: none"> 
+            <a href="">As a student</a>
+            <a href="">As a employer</a>
         </div>
     </div>
     </div>
