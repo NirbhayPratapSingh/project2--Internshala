@@ -1,9 +1,6 @@
 body{
     background-color: rgb(241, 241, 247);
 }
-*{
-    color: #484848;
-}
 input{
     width: 180px;
     height: 30px;
@@ -17,10 +14,12 @@ input{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    color: #484848;
 }
 .filtertopR{
     display: flex;
     flex-direction: column;
+    color: #484848;
 }
 .logo{
     background: #FF8C00;
@@ -32,6 +31,7 @@ input{
     flex-shrink: 0;
 }
 #FilterR{
+    color: #484848;
     margin-top: 2%;
     padding-left: 2%;
     background-color: white;
@@ -52,19 +52,21 @@ input{
      /* margin-left: 20px; */
 }
 .KeywordformR{
+    color: #484848;
     display: flex;
     flex-direction:row;
     margin-top: 0px;
     margin-bottom: 30px;
 }
 .containerR{
+    color: #484848;
     background-color: white;
     border-radius: 6px;
     width: 600px;
     height: 250px;
     margin-bottom: 15px;
     padding-left: 3%;
-    padding-right: 3%;
+    padding-right: 0%;
     padding-bottom: 3%;
     margin-left: 30%;
     
@@ -77,6 +79,7 @@ input{
     line-height: 1.14285714;
   } */
 .atagR{
+    color: #484848;
     font-size: 12px;
 }
 
@@ -85,10 +88,12 @@ h3{
     color: #484848;
 }
 h4{
+    color: #484848;
     font-size: 14px;
 }
 
 .boxheadR{
+    color: #484848;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -99,11 +104,18 @@ img{
     height: 60px;
 }
 .boxbottomR{
+    color: #484848;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
 p{
+    color: #484848;
     font-size: 15px;
+}
+.offerR{
+    color: #484848;
+    display: flex;
+    flex-direction: row;
 }
