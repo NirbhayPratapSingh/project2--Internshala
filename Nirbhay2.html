@@ -78,344 +78,317 @@
     opacity: 15%;
   }
   
-  #banner_container {
-    position: absolute;
-    width: 70%;
-    height: 660px;
+ 
+  .hover {
+  border: 1px solid whitesmoke;
+  margin: 28px 2px;
+  padding: 15px 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  width: 26%;
+  height: 300px;
+  /* line-height: 10px; */
+  position: absolute;
+  left: 650px;
+  z-index: 1;
+  display: none;
+  background: #fff;
+}
+
+.hover h3 {
+  margin-bottom: 10px;
+}
+.hover--navbar {
+  display: flex;
+  gap: 10px;
+}
+.hover--navbar > div:nth-child(2) {
+  border-left: 1px solid dimgray;
+  padding: 10px 0;
+}
+.hover--navbar > div:nth-child(2) a {
+  line-height: 2.4;
+  font-size: 12px;
+  margin: 0;
+}
+.hover--navbar ul {
+  list-style: none;
+  font-family: Theory-web-ul;
+}
+
+.nav-hover:hover .hover {
+  display: block;
+}
+.hover--navbar div p {
+  font-size: 12px;
+}
+.hover--navbar div h5 {
+  line-height: 0.1;
+  font-size: 14px;
+  padding: 10px;
+}
+.hover--navbar div h5:hover {
+  cursor: pointer;
+  color: #0082d4;
+  border-radius: 0 5px 5px 0;
+  background-color: #edf7fe;
+}
+
+#last {
+  font-weight: bold;
+}
+
+.container{
+    width: 27%;
+    height: 370px;
+    border: 1px solid gray;
     margin: auto;
-    margin-top: 20px;
-    margin-left:200px;
-    border-radius: 6px;
+    border-radius: 3px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.title{
+    font-size: 19px;
+    font-weight: 700;
+    margin-left: 20px;
+    color: rgb(77, 76, 76);
+}
+
+.title1{
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: -20px;
+    margin-left: 20px;
+    color: rgb(77, 76, 76);
+}
+
+.mail{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(77, 76, 76);
+}
+
+#filled-mail{
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    background: #f8f8f8;
+    border: 1px solid rgb(0, 165, 236);;
+}
+
+.email-div{
+    margin-left: 20px;
+    margin-top: -12px;
+    width: 80%;
+}
+
+.batch{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(77, 76, 76);
+    margin-bottom: 5px;
+}
+
+.wrap_select{
+    flex-direction: row;
+    margin-left: -10px;
+    margin-right: -20px;
+}
+
+.select_box {
     display: flex;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/banners-new-ds/banner-1920.png");
+    /* width: 200px; */
+    /* margin-top: 15px; */
+    
+    flex-direction: column;
   }
   
-  #hover_div {
+  .select_box .options_container {
+    background-color: white;
+    color: rgb(90, 86, 86);
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    border-radius: 8px;
+    overflow: hidden;
+    order: 1;
+  }
+  
+  .selected {
+    /* background-color: rgb(0, 165, 236); */
+    border-radius: 3px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 500;
+    border: 1px solid rgb(0, 165, 236);
+    position: relative;
+    order: 0;
+  }
+
+  .selected::after {
+    content: "";
+    background: url("/Traning_Page/images/down-filled-triangular-arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    width: 600px;
-    height: 350px;
-    background: #fff;
-    margin-left: 18%;
-    z-index: 10;
+    height: 100%;
+    width: 15px;
+    right: 10px;
+    top: 8px;
+    transition: all 0.4s;
+  }
+  
+  .select_box .options_container.active {
+    max-height: 240px;
+    opacity: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  .select_box .options_container.active + .selected::after {
+    transform: rotate(180deg);
+    top: -6px;
+  }
+  
+  .select_box .options_container::-webkit-scrollbar {
+    width: 4px;
+    background: white;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select_box .options_container::-webkit-scrollbar-thumb {
+    /* width: 8px; */
+    background: rgb(187, 187, 187);
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select_box,
+  .option,
+  .selected {
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+  
+  .select_box .option:hover {
+    background-color: rgb(230, 244, 252);
+    color: rgb(0, 165, 236);
+  }
+  
+  .select_box label {
+    cursor: pointer;
+  }
+  
+  .select_box .option .radio {
     display: none;
   }
-  
-  #hover_div_flex {
-    width: 100%;
-    height: 100%;
+
+  /* end select wrap-------------------------------- */
+
+.discount{
     display: flex;
-  }
-  
-  #hover_div_left,
-  #hover_div_right {
-    width: 50%;
-    height: 100%;
-    overflow-y: scroll;
-    /* margin-top: -20px; */
-    font-size: 15px;
-  }
-  
-  #hover_div_flex > div > div div:hover {
-    background-color: #d5f5f1;
-    border-radius: 0px 30px 30px 0px;
-  }
-  
-  /* b2f7ef */
-  
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: rgb(194, 191, 191);
-    border-radius: 5px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(173, 172, 172);
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  #hover_box_left > div,
-  #hover_box_right > div {
-    padding: 15px;
-  }
-  
-  #banner_left {
-    flex: 6;
-  }
-  
-  #banner_right {
-    flex: 4;
-    display: flex;
-  }
-  
-  #left_banner_content {
-    margin-top: 30px;
-    max-width: 500px;
-    margin-left: 20px;
-    color: #484848;
-  }
-  
-  .certified_tag {
-    text-align: center;
-    font-size: large;
-    width: 220px;
-    background: #ffd907;
-    color: #1b6b60;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  h1 {
-    font-size: 44px;
-    line-height: 52px;
-    font-weight: 900;
-    margin-top: 24px;
-    color: #fff;
-  }
-  
-  #left_banner_content p {
-    color: #fff;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 600;
-    margin-top: 20px;
-  }
-  
-  .fa-star {
-    color: #ffae00;
-  }
-  
-  #flex1 {
-    margin-top: 24px;
-  }
-  
-  #flex2 {
-    margin-top: 13px;
-  }
-  
-  #flex1,
-  #flex2 {
-    display: flex;
-  }
-  
-  #flex1 > div,
-  #flex2 > div {
-    background-color: white;
-    color: #484848;
-    border-radius: 24px;
-    padding: 10px;
+    margin-top: -10px;
+}
+
+.actual-price{
     margin-right: 10px;
-    font-weight: 700;
-  }
-  
-  #flex2 > div {
-    display: flex;
-    align-items: center;
-  }
-  
-  .fa-handshake {
-    margin-right: 5px;
-  }
-  
-  #offer_tag_container {
-    display: flex;
-    background: white;
-    border-radius: 5px;
+    margin-left: 20px;
+    color: #ff8c00;
+    /* margin-top: 10px; */
+}
+
+.disc-price{
+    color: rgb(77, 76, 76);
+}
+
+.process{
+    background-color: rgb(0, 165, 236);
+    width: 85%;
+    margin-left: 20px;
+    border-radius: 3px;
+    margin-top: -12px;
+    /* display: flex; */
+}
+
+.process p{
     padding: 10px;
-    margin-top: 24px;
-  }
-  
-  #offer_tag_container img {
-    width: 45px;
-    margin-top: 2px;
-    margin-right: 8px;
-  }
-  
-  #offer_tag_description {
-    display: flex;
-    align-items: center;
-  }
-  
-  #form_container {
-    width: 360px;
-    height: 550px;
-    margin: 25px 20px 0px auto;
-    background: white;
-    border-radius: 6px;
-  }
-  
-  #form_content {
-    width: 90%;
-    margin: 15px auto;
-    color: #333;
-  }
-  
-  #form_content p {
-    margin: 10px 0px;
-  }
-  
-  #original_price,
-  #bill > p {
-    margin-left: 10px;
-  }
-  
-  #names_input,
-  #code_and_batch,
-  #bill {
-    display: flex;
-  }
-  
-  #mobile_details {
-    display: flex;
-  }
-  
-  #country_code {
-    width: 40px;
-  }
-  
-  #mail,
-  #pass {
-    width: 95%;
-  }
-  
-  #name,
-  #surname {
-    width: 86%;
-  }
-  
-  #surname {
-    margin-left: 6px;
-  }
-  
-  #cont_num {
-    width: 147%;
-  }
-  
-  input {
-    padding: 7px;
-  }
-  
-  #code {
-    width: 54%;
-  }
-  
-  #coupon_code {
-    width: 80%;
-  }
-  
-  #batch {
-    width: 115%;
-  }
-  
-  select {
-    padding: 7.5px;
-  }
-  
-  #objective,
-  form button {
-    width: 100%;
-  }
-  
-  #must_pay {
-    color: #ff7a00;
-    font-size: 19px;
-    font-weight: 600;
-    letter-spacing: 1.3px;
-  }
-  
-  #bill {
-    align-items: center;
-  }
-  
-  #original_price {
-    text-decoration: line-through;
-    text-decoration-thickness: 1px;
-  }
-  
-  form button {
-    border: none;
-    background-color: #0297ee;
-    color: #fff;
-    height: 40px;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 15px;
-  }
-  
-  form button:hover {
-    background-color: #2080e7;
-  }
-  
-  h2 {
-    padding-top: 55px;
-    padding-bottom: 30px;
-    text-align: center;
-    font-size: 28px;
-    color: #333;
-    font-weight: 800;
-    line-height: 36px;
-  }
-  
-  #training_highlights {
-    width: 80%;
-    height: 300px;
-    margin: auto;
-    /* border: 1px solid black; */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-  
-  #training_highlights > div {
-    display: flex;
-    height: 80px;
-    /* border: 1px solid red; */
-  }
-  
-  #training_highlights > div b,
-  #training_highlights > div p {
-    padding: 6px;
-  }
-  
-  #training_highlights > div b {
-    font-size: 18px;
-    color: #333;
-  }
-  
-  #training_highlights > div p {
-    color: #484848;
-  }
-  
-  .tr_high_logo {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .tr_high_descr {
-    flex: 8;
-  }
-  
-  .descr_div {
-    padding: 10px 0px 0px 10px;
-  }
-  
-  .logo_div {
-    width: 55px;
-    height: 55px;
-  }
-       
+    color: white;
+    /* text-align:center; */
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  height: 480px;
+}
+#titles {
+  width: 92%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+#titles > div {
+  width: 24%;
+  padding-left: 10px;
+  height: 340px;
+  line-height: 1;
+  margin-top: 20px;
+}
+#tag {
+  background-color: #ff8c00;
+  color: white;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 12px;
+  padding: 2px;
+  font-family: "Open Sans", sans-serif;
+}
+hr {
+  width: 90%;
+  margin: auto;
+  color: dimgray;
+}
+#social_media {
+  width: 90%;
+  margin: 26px auto;
+}
+#play {
+  display: inline-block;
+  color: #fff;
+  margin-right: 32px;
+  border: 1px solid #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+#icons {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 10px;
+}
+#icons a {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#copyright {
+  float: right;
+  margin-top: 10px;
+  color: white;
+}
+
+
         #box2
         {
-            margin-top:700px;
+            margin: top 20px;
         }
         #box2>h2
         {
@@ -837,144 +810,69 @@
       </div>
       <hr id="nav_hr" />
     <div id="box1">
-        <div id="banner_container">
-            <div id="hover_div">
-              <div id="hover_div_flex">
-                <div id="hover_div_left">
-                  <div id="hover_box_left">
-                    <div>Most Popular</div>
-                    <div>Programming</div>
-                    <div>Business & Management</div>
-                    <div>Core Engineering</div>
-                    <div>Data Science</div>
-                    <div>Design</div>
-                    <div>Creative Arts</div>
-                    <div>Language</div>
-                  </div>
-                </div>
-                <div id="hover_div_right">
-                  <div id="hover_box_right">
-                    <div>Web Development</div>
-                    <div>Digital Marketing</div>
-                    <div>Programming with Python</div>
-                    <div>AutoCAD</div>
-                    <div>Advanced Excel</div>
-                    <div>Machine Learning</div>
-                    <div>Android App Development</div>
-                    <div>Data Science</div>
-                  </div>
-                </div>
-              </div>
+        <div class="container">
+
+            <p class="title">Internshala online training on Web</p>
+            <p class="title1">Development</p>
+    
+            <p class="mail">Email</p>
+            <div class="email-div">
+                <input type="text" id="filled-mail" value="">
             </div>
-            <div id="banner_left">
-              <div id="left_banner_content">
-                <div class="certified_tag">Certified online training</div>
-                <h1>Learn Web Development</h1>
-                <p class="course-brief">
-                  Learn HTML/CSS, MySQL, PHP, JavaScript, and React and build a
-                  website from scratch!
-                </p>
-                <div id="tags">
-                  <div id="flex1">
-                    <div><i class="fa-solid fa-star"></i> 4.1</div>
-                    <div><i class="fa-solid fa-user-group"></i> 64,197 Students</div>
-                    <div><i class="fa-solid fa-calendar"></i> 6 Weeks</div>
-                  </div>
-                  <div id="flex2">
-                    <div>
-                      <i class="fa-solid fa-handshake"></i> Placement Assistance
-                    </div>
-                    <div><span class="material-icons">volume_up</span> English, हिन्दी</div>
-                  </div>
-                </div>
-                <div id="offer_tag_container">
-                  <div>
-                    <img
-                      src="https://trainings.internshala.com/cached_uploads/sale/BOGO/bogo_sale.png"
-                      alt=""
-                    />
-                  </div>
-                  <div id="offer_tag_description">
-                    1+1 Offer: Get Internship & Job Preparation training FREE on
-                    purchase of Web Development training!
-                  </div>
-                </div>
-              </div>
-            </div>
-          <div id="banner_right">
-              <div id="form_container">
-                <div id="form_content">
-                  <form action="">
-                    <div>
-                      <p>Email Id</p>
-                      <input id="mail" placeholder="john@example.com" type="email" />
-                    </div>
-                    <div>
-                      <p>Create password</p>
-                      <input
-                        id="pass"
-                        placeholder="must be at least 6 characters"
-                        type="password"
-                      />
-                    </div>
-                    <div id="names_input">
-                      <div>
-                        <p>First Name</p>
-                        <input id="name" placeholder="John" type="text" />
-                      </div>
-                      <div>
-                        <p>Last Name</p>
-                        <input id="surname" placeholder="Doe" type="text" />
-                      </div>
-                    </div>
-                    <div>
-                      <p>Mobile Number</p>
-                      <div id="mobile_details">
-                        <div id="country_code">
-                          <input value="+91" type="text" />
+    
+            <p class="batch">Choose Batch</p>
+            <div class="email-div">
+                <div class="wrap_select">
+    
+                    <div class="select_box">
+    
+                        <div class="options_container">
+    
+                            <!-- <div class="option">
+                                <input type="radio" class="radio" id="automobiles" name="category">
+                                <label for="automobiles">1 March 2022</label>
+                            </div> -->
+                            <div class="option">
+                                <input type="radio" class="radio" id="film" name="category">
+                                <label for="film">15 March 2022</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="science" name="category">
+                                <label for="science">1 Apr 2022</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="art" name="category">
+                                <label for="art">15 Apr 2022</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="music" name="category">
+                                <label for="music">1 may 2022</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="travel" name="category">
+                                <label for="travel">15 May 2022</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="lang" name="category">
+                                <label for="lang">1 June 2022</label>
+                            </div>
                         </div>
-                        <div>
-                          <input id="cont_num" placeholder="9689274940" type="text" />
+                        <div class="selected">
+                            1 March 2022
                         </div>
-                      </div>
                     </div>
-                    <div id="code_and_batch">
-                      <div id="code">
-                        <p>Coupon Code</p>
-                        <input id="coupon_code" value="DEGREE10" type="text" />
-                      </div>
-                      <div>
-                        <p>Choose Batch</p>
-                        <select name="" id="batch">
-                          <option value="">23rd Feb, 2022</option>
-                          <option value="">1st Mar, 2022</option>
-                          <option value="">15th Mar, 2022</option>
-                          <option value="">1st Apr, 2022</option>
-                          <option value="">15th Apr, 2022</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div>
-                      <p>I want to learn web development to</p>
-                      <select name="" id="objective">
-                        <option value="">Gain a new skill</option>
-                        <option value="">Build my own project</option>
-                        <option value="">Get an intership/job in furure</option>
-                        <option value="">Gain a certificate</option>
-                        <option value="">Fulfil college requirement</option>
-                      </select>
-                    </div>
-                    <div id="bill">
-                      <span id="must_pay">₹1349</span
-                      ><span id="original_price">4499</span>
-                      <p>valid till 2nd Mar</p>
-                    </div>
-                    <button>Sign up</button>
-                  </form>
                 </div>
-              </div>
             </div>
-          </div>
+    
+            <div class="discount">
+                <p class="actual-price">1349/-</p>
+                <p class="disc-price"> 4999 Flat 80% off till 28th Feb</p>
+            </div>
+    
+            <div class="process" onclick="window.location.href='./jenny.html'">
+                <p >Proceed to Pay</p>
+            </div>
+        </div>
     </div>
     <div id="box2">
         <h2>Training Highlights</h2>
@@ -1211,7 +1109,7 @@
                     </div>
                     <div class="horizontal_containers container3">
                       <div class="lang_container">
-                        <div ><p>Bootstrap</p></div>
+                        <div><p>Bootstrap</p></div>
                         <div><i class="fa-solid fa-angle-down"></i></div>
                       </div>
                       <div class="lang_descr">
@@ -1415,48 +1313,30 @@
     }, 1000);
 
 
-    document.querySelector("form").addEventListener("submit", formSubmit);
-    var formArr = JSON.parse(localStorage.getItem("userdata")) || [];
-    function formSubmit(event) {
-    event.preventDefault();
-    var email = document.querySelector("#mail").value;
-    var password = document.querySelector("#pass").value;
-    var firstName = document.querySelector("#name").value;
-    var lastName = document.querySelector("#surname").value;
-    var contactNumber = document.querySelector("#cont_num").value;
-    var couponCode = document.querySelector("#coupon_code").value;
-    var batch = document.querySelector("#batch").value;
-    var objective = document.querySelector("#objective").value;
+    const selected = document.querySelector(".selected")
+    const optionsContainer = document.querySelector(".options_container")
 
-    var formobj = {
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        password: password,
-        contactNumber: contactNumber,
-        couponCode: couponCode,
-        batch: batch,
-        objective: objective,
-    };
+    const optionList = document.querySelectorAll(".option")
 
-    if (
-        firstName != "" &&
-        lastName != "" &&
-        email != "" &&
-        password != "" &&
-        contactNumber != "" &&
-        couponCode == "DEGREE10"
-    ) {
-        alert("SignUp Sucessful");
-        formArr.push(formobj);
-        localStorage.setItem("userdata", JSON.stringify(formArr));
-        window.location.href = "../index.html";
-        window.location.href = "./Nirbhay2.html";
-    } else {
-        alert("Enter all details");
-    }
-    }
+    selected.addEventListener("click", () => {
+        optionsContainer.classList.toggle("active")
+    })
+
+    optionList.forEach(ele => {
+        ele.addEventListener("click", () => {
+            selected.innerHTML = ele.querySelector("label").innerHTML
+            optionsContainer.classList.remove("active")
+        })
+    })
+    let userData = JSON.parse(localStorage.getItem("userdata"))
+
+    document.getElementById("filled-mail").value = userData[userData.length-1].email
+
+    console.log(userData[userData.length-1].email)   
 </script>
+
+
+
 <script type="module">
      import footer from "./components/footer.js"
     let foot=document.querySelector("#foot");
