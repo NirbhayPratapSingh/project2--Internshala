@@ -1,0 +1,328 @@
+#conatiner-right {
+    position: absolute;
+    bottom: 350px;
+    right: 250px;
+    height: 500px;
+    width: 20%;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+}
+
+#google {
+    display: flex;
+    height: 40px;
+    border: 1px solid gray;
+    justify-content: center;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#google>div>img {
+    padding-top: 10px
+}
+
+#google>div:nth-child(2)>p {
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+#email {
+    margin-left: 12px;
+    margin-top: 20px;
+}
+
+#email>p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#email>input {
+    width: 90%;
+    height: 30px;
+    border: 1px solid gray;
+    padding: auto;
+    padding-left: 10px;
+}
+
+
+#password {
+    margin-left: 12px;
+}
+
+#password>p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+#password>input {
+    width: 90%;
+    height: 30px;
+    padding-left: 10px;
+}
+
+#names {
+    display: flex;
+    margin-left: 12px;
+    margin-top: 10px;
+
+}
+
+#mobile {
+    display: flex;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+#mobile>p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#fname>p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#fname>input {
+    width: 90%;
+    height: 30px;
+
+}
+
+#code {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#code1 {
+    height: 30px;
+    width: 15%;
+    padding-left: 10px;
+}
+
+#digits {
+    height: 30px;
+    width: 60%;
+    padding-left: 10px;
+}
+
+#lname>p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#lname>input {
+    width: 90%;
+    height: 30px;
+}
+
+#terms {
+    margin-left: 12px
+}
+
+#terms>p {
+    color: gray;
+
+}
+
+#terms>p>a {
+    text-decoration: none;
+
+}
+
+#registrationbutton {
+    margin-left: 20px;
+}
+
+#registrationbutton>button {
+    width: 90%;
+    height: 40px;
+    background: #00a5ec;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+#question {
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#question>a {
+    font-size: 18px;
+    /* font-weight: bold; */
+    text-decoration: none;
+    margin-left: 130px;
+
+}
+
+#headind {
+    display: flex;
+    font-size: 44px;
+}
+
+#a {
+    position: absolute;
+    top: 16px;
+    left: 50px;
+    color: white;
+    font-size: 36px;
+    margin: auto;
+    justify-content: center
+}
+
+#container-left {
+    position: absolute;
+    top: 0px;
+    left: 160px
+}
+
+/* #headind>div:nth-child(2)>img{
+    padding-top: 68px
+} */
+#second {
+    font-size: 24px;
+}
+
+#third {
+    font-size: 18px
+}
+
+#continer2 {
+    height: 512px;
+    width: 80%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 50px;
+}
+
+#heading {
+    height: 130px;
+    width: 80%;
+    /* border: 1px solid black; */
+    margin: auto;
+    justify-content: center;
+
+
+}
+
+#heading1 {
+    margin-top: 20px;
+    margin-left: 300px;
+    font-size: 44px
+}
+
+#process {
+    height: 328;
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center
+}
+
+#process>div {
+    height: 388px;
+    width: 352px;
+    /* border: 1px solid black; */
+
+}
+
+#process>div>div>img {
+    height: 241px;
+    width: 282px;
+    margin-left: 40px;
+}
+
+#process>div>div>h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+#process>div>div>p {
+    font-size: 22px;
+    margin-left: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+#registrationbutton2>button {
+    width: 30%;
+    height: 60px;
+    background: #00a5ec;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+}
+
+#registrationbutton2 {
+    margin-left: 600px;
+    margin-top: 50px;
+
+}
+
+#last>img {
+    height: 450px;
+    width: 1365px;
+    margin-left: 250px;
+    margin-top: 150px;
+}
+
+#last>div>h1:first-child {
+    position: absolute;
+    top: 1500px;
+    left: 150px;
+    font-size: 32px;
+    color: #0e567b
+}
+
+#last>div>h1:last-child {
+    position: absolute;
+    top: 1540px;
+    left: 150px;
+    font-size: 32px;
+    color: #0e567b
+}
+
+#last>div>img {
+    position: absolute;
+    top: 1600px;
+    left: 150px;
+    border-radius: 3px;
+
+}
+
+#last>div>button {
+    position: absolute;
+    top: 100;
+    left: 150px;
+}
+
+#last1 {
+    position: absolute;
+    top: 1800px;
+    left: 10px;
+}
+
+#last1>button {
+    height: 48px;
+    width: 151px;
+    background-color: white;
+    color: #0e567b;
+    font-weight: bold;
+    border-color: #00a5ec;
+
+}

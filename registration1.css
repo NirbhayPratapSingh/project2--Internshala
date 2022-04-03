@@ -1,0 +1,184 @@
+#conatiner-right {
+    position: absolute;
+    bottom: 350px;
+    right: 250px;
+    height: 500px;
+    width: 20%;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+}
+
+#google {
+
+    display: flex;
+    height: 40px;
+    border: 1px solid gray;
+    justify-content: center;
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+#google>div>img {
+    padding-top: 10px
+}
+
+#google>div:nth-child(2)>p {
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+#email {
+    margin-left: 12px
+}
+
+#email>p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#email>input {
+    width: 90%;
+    height: 30px;
+    border: 1px solid gray;
+    padding-left: 10px;
+}
+
+
+#password {
+    margin-left: 12px;
+}
+
+#password>p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#password>input {
+    width: 90%;
+    height: 30px;
+    padding-left: 10px;
+
+}
+
+#names {
+    display: flex;
+    margin-left: 12px;
+}
+
+#fname>p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#fname>input {
+    width: 80%;
+    height: 30px;
+    padding-left: 10px;
+
+}
+
+#lname>p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#lname>input {
+    width: 80%;
+    height: 30px;
+    padding-left: 10px;
+}
+
+#terms {
+    margin-left: 12px
+}
+
+#terms>p {
+    color: gray;
+
+}
+
+#terms>p>a {
+    text-decoration: none;
+
+}
+
+#singupbutton {
+    margin-left: 20px;
+}
+
+#singupbutton>button {
+    width: 90%;
+    height: 40px;
+    background: #00a5ec;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+#login {
+    margin-left: 100px
+}
+
+#login>p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    justify-content: center
+}
+
+#headind {
+    display: flex;
+    font-size: 44px;
+}
+
+#a {
+    position: absolute;
+    top: 16px;
+    left: 50px;
+    color: white;
+    font-size: 36px;
+    margin: auto;
+    justify-content: center
+}
+
+#container-left {
+    position: absolute;
+    top: 0px;
+    left: 160px
+}
+
+#bgimg {
+    top: 50%;
+    margin-top: -200px;
+}
+
+#headind>div:nth-child(2)>img {
+    padding-top: 68px
+}
+
+#second {
+    font-size: 24px;
+}
+
+.third>div {
+    display: flex;
+    /* border: 1px solid black; */
+    height: 24px;
+    width: 240px;
+    padding-bottom: 10px;
+}
+
+
+.title {
+    /* margin: auto; */
+    margin-left: 5px;
+    margin-top: 5px;
+}
