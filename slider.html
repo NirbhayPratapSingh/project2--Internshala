@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    const slideShow = () => {
+    let img_arr = ['./img/int1.PNG','./img/int2.PNG','./img/int3.PNG','./img/int4.PNG']
+    let slide_img = document.getElementById("slideshow_img")
+    let i=0;
+    var x = setInterval(function(){
+        if(i==img_arr.length){
+            i=0;
+        }
+        slide_img.src = img_arr[i];
+        i++;
+    },3000)
+}
+slideShow();
+</script>
+
+$("#dropdown_hover").click(function () {
+    $("#hover_div").slideToggle("slow");
+  });
+  
+  $(".container1").click(function () {
+    $(".hid_container1").slideToggle("slow");
+  });
+  
+  $(".container2").click(function () {
+    $(".hid_container2").slideToggle("slow");
+  });
+  
+  $(".container3").click(function () {
+    $(".hid_container3").slideToggle("slow");
+  });
+  
+  $(".container4").click(function () {
+    $(".hid_container4").slideToggle("slow");
+  });
+  
+  $(".container5").click(function () {
+    $(".hid_container5").slideToggle("slow");
+  });
+
+</script>
+
+<script>
+    let dest = new Date("mar 2, 2022 10:00:00").getTime();
+
+    let x = setInterval(() => {
+    let now = new Date().getTime();
+
+    let time_diff = dest - now;
+
+    let days = Math.floor(time_diff / (60 * 60 * 24 * 1000));
+    let hours = Math.floor(
+        (time_diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    let minutes = Math.floor((time_diff % (1000 * 60 * 60)) / (1000 * 60));
+    let sec = Math.floor((time_diff % (1000 * 60)) / 1000);
+    document.getElementById(
+        "coupon_coutdown"
+    ).innerHTML = `${days}d: ${hours}h: ${minutes}m: ${sec}s`;
+    }, 1000);
+
+
+    document.querySelector("form").addEventListener("submit", formSubmit);
+    var formArr = JSON.parse(localStorage.getItem("userdata")) || [];
+    function formSubmit(event) {
+    event.preventDefault();
+    var email = document.querySelector("#mail").value;
+    var password = document.querySelector("#pass").value;
+    var firstName = document.querySelector("#name").value;
+    var lastName = document.querySelector("#surname").value;
+    var contactNumber = document.querySelector("#cont_num").value;
+    var couponCode = document.querySelector("#coupon_code").value;
+    var batch = document.querySelector("#batch").value;
+    var objective = document.querySelector("#objective").value;
+
+    var formobj = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        password: password,
+        contactNumber: contactNumber,
+        couponCode: couponCode,
+        batch: batch,
+        objective: objective,
+    };
+
+    if (
+        firstName != "" &&
+        lastName != "" &&
+        email != "" &&
+        password != "" &&
+        contactNumber != "" &&
+        couponCode == "DEGREE10"
+    ) {
+        alert("SignUp Sucessful");
+        formArr.push(formobj);
+        localStorage.setItem("userdata", JSON.stringify(formArr));
+        window.location.href = "../index.html";
+        window.location.href = "./Nirbhay2.html";
+    } else {
+        alert("Enter all details");
+    }
+    }
+</script>
+<script type="module">
+     import footer from "./components/footer.js"
+    let foot=document.querySelector("#foot");
+    foot.innerHTML=footer();
+</script>
+
