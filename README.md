@@ -32,10 +32,10 @@ This is a clone of Internshal website. Internshala is an internship and online t
 
 ## Team Members
 
-<!-- - [Vishal Kumar Sinha](https://github.com/Vishal062)
-- [Badvel Venkata Srikanth Reddy](https://github.com/SrikanthReddyBV)
-- [Krishna Kumar Keshri](https://github.com/KrishnaKumarKeshri96)
-- [Sarvesh Kumar Sharma](https://github.com/SARVESHSHARMA-SKS) -->
+- [Rajat Soni](https://github.com/Rajat-soni-vst-au4)
+- [Jaynika tandal](https://github.com/jeny008)
+- [Samson seemal](https://github.com/SamsonSeemal)
+- [Iqbal Ali](https://github.com/Ninza1)
 <!-- 
 ## How to use our app?
 - Install git on your machine
